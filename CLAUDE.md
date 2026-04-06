@@ -47,7 +47,7 @@ GET STARTED: "Translate this into [language]. Keep the tone warm and make it sou
 ---
 
 ## TIP #6
-STATUS: Done
+STATUS: Ready
 
 TITLE: Turn Meeting Notes into Action Items
 SUBTITLE: Stop leaving meetings with a list no one follows up on.
