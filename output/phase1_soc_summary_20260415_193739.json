@@ -1,0 +1,263 @@
+{
+  "run_timestamp": "20260415_193739",
+  "mailbox": "jmoses@barry.edu",
+  "sender": "soc@oculusit.com",
+  "search_start": "2024-04-01",
+  "search_end": "2026-04-15",
+  "total_emails": 2405,
+  "unique_ticket_numbers": 1365,
+  "by_email_type": {
+    "Recall": 5,
+    "New Ticket": 1422,
+    "Reply/Update": 978
+  },
+  "by_category": {
+    "Uncategorized": 837,
+    "Anomalous Token": 405,
+    "MS Graph API Alert": 232,
+    "Unfamiliar Sign-in Properties": 127,
+    "Malware Detected": 120,
+    "Sign-in from Tor / Malware C2": 103,
+    "Sign-in from Anonymous Proxy": 95,
+    "Unusual Sign-in Location": 80,
+    "Network Reconnaissance": 69,
+    "Sensitive Files / DLP": 69,
+    "Pass-the-Ticket / Kerberos": 65,
+    "Mail Forwarding Alert": 52,
+    "Sign-in from Malicious IP": 35,
+    "Sign-in Disabled Accounts": 30,
+    "Maintenance / Informational": 27,
+    "OSSEC / Agent Disconnected": 21,
+    "Credential Phishing / AiTM": 20,
+    "User at Risk": 17,
+    "Malicious PowerShell": 1
+  },
+  "by_month": {
+    "2024-04": 15,
+    "2024-05": 40,
+    "2024-06": 225,
+    "2024-07": 122,
+    "2024-08": 293,
+    "2024-09": 189,
+    "2024-10": 123,
+    "2024-11": 115,
+    "2024-12": 188,
+    "2025-01": 156,
+    "2025-02": 83,
+    "2025-03": 112,
+    "2025-04": 97,
+    "2025-05": 72,
+    "2025-06": 49,
+    "2025-07": 41,
+    "2025-08": 55,
+    "2025-09": 59,
+    "2025-10": 27,
+    "2025-11": 71,
+    "2025-12": 72,
+    "2026-01": 64,
+    "2026-02": 72,
+    "2026-03": 50,
+    "2026-04": 15
+  },
+  "window_counts": [
+    {
+      "window": "2024-04",
+      "start": "2024-04-01",
+      "end": "2024-04-30",
+      "count": 15
+    },
+    {
+      "window": "2024-05",
+      "start": "2024-05-01",
+      "end": "2024-05-31",
+      "count": 40
+    },
+    {
+      "window": "2024-06-01w",
+      "start": "2024-06-01",
+      "end": "2024-06-07",
+      "count": 23
+    },
+    {
+      "window": "2024-06-08w",
+      "start": "2024-06-08",
+      "end": "2024-06-14",
+      "count": 85
+    },
+    {
+      "window": "2024-06-15w",
+      "start": "2024-06-15",
+      "end": "2024-06-21",
+      "count": 53
+    },
+    {
+      "window": "2024-06-22w",
+      "start": "2024-06-22",
+      "end": "2024-06-28",
+      "count": 58
+    },
+    {
+      "window": "2024-06-29w",
+      "start": "2024-06-29",
+      "end": "2024-06-30",
+      "count": 6
+    },
+    {
+      "window": "2024-07",
+      "start": "2024-07-01",
+      "end": "2024-07-31",
+      "count": 122
+    },
+    {
+      "window": "2024-08-01w",
+      "start": "2024-08-01",
+      "end": "2024-08-07",
+      "count": 78
+    },
+    {
+      "window": "2024-08-08w",
+      "start": "2024-08-08",
+      "end": "2024-08-14",
+      "count": 51
+    },
+    {
+      "window": "2024-08-15w",
+      "start": "2024-08-15",
+      "end": "2024-08-21",
+      "count": 69
+    },
+    {
+      "window": "2024-08-22w",
+      "start": "2024-08-22",
+      "end": "2024-08-28",
+      "count": 72
+    },
+    {
+      "window": "2024-08-29w",
+      "start": "2024-08-29",
+      "end": "2024-08-31",
+      "count": 23
+    },
+    {
+      "window": "2024-09",
+      "start": "2024-09-01",
+      "end": "2024-09-30",
+      "count": 189
+    },
+    {
+      "window": "2024-10",
+      "start": "2024-10-01",
+      "end": "2024-10-31",
+      "count": 123
+    },
+    {
+      "window": "2024-11",
+      "start": "2024-11-01",
+      "end": "2024-11-30",
+      "count": 115
+    },
+    {
+      "window": "2024-12",
+      "start": "2024-12-01",
+      "end": "2024-12-31",
+      "count": 188
+    },
+    {
+      "window": "2025-01",
+      "start": "2025-01-01",
+      "end": "2025-01-31",
+      "count": 156
+    },
+    {
+      "window": "2025-02",
+      "start": "2025-02-01",
+      "end": "2025-02-28",
+      "count": 83
+    },
+    {
+      "window": "2025-03",
+      "start": "2025-03-01",
+      "end": "2025-03-31",
+      "count": 112
+    },
+    {
+      "window": "2025-04",
+      "start": "2025-04-01",
+      "end": "2025-04-30",
+      "count": 97
+    },
+    {
+      "window": "2025-05",
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "count": 72
+    },
+    {
+      "window": "2025-06",
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "count": 49
+    },
+    {
+      "window": "2025-07",
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "count": 41
+    },
+    {
+      "window": "2025-08",
+      "start": "2025-08-01",
+      "end": "2025-08-31",
+      "count": 55
+    },
+    {
+      "window": "2025-09",
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "count": 59
+    },
+    {
+      "window": "2025-10",
+      "start": "2025-10-01",
+      "end": "2025-10-31",
+      "count": 27
+    },
+    {
+      "window": "2025-11",
+      "start": "2025-11-01",
+      "end": "2025-11-30",
+      "count": 71
+    },
+    {
+      "window": "2025-12",
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "count": 72
+    },
+    {
+      "window": "2026-01",
+      "start": "2026-01-01",
+      "end": "2026-01-31",
+      "count": 64
+    },
+    {
+      "window": "2026-02",
+      "start": "2026-02-01",
+      "end": "2026-02-28",
+      "count": 72
+    },
+    {
+      "window": "2026-03",
+      "start": "2026-03-01",
+      "end": "2026-03-31",
+      "count": 50
+    },
+    {
+      "window": "2026-04",
+      "start": "2026-04-01",
+      "end": "2026-04-15",
+      "count": 15
+    }
+  ],
+  "output_csv": "./output/phase1_soc_emails_20260415_193739.csv"
+}
