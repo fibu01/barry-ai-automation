@@ -79,13 +79,16 @@ CATEGORY_RULES = [
     # Identity & Sign-in Threats  (most common at Barry)
     # -----------------------------------------------------------------------
     ("Anomalous Token",               [r"anomalous\s*token"]),
-    ("Pass-the-Ticket / Kerberos",    [r"pass.the.ticket", r"kerberos"]),
+    ("Pass-the-Ticket / Kerberos",    [r"pass.the.ticket", r"kerberos", r"pass.the.hash",
+                                       r"over.pass.the.hash"]),
     ("Stolen Session Cookie",         [r"stolen.{0,20}session", r"session.{0,20}cookie"]),
     ("User at Risk",                  [r"user.{0,10}at.{0,10}risk"]),
     ("Unfamiliar Sign-in Properties", [r"unfamiliar.{0,20}sign.?in"]),
     ("Unusual Sign-in Location",      [r"unusual.{0,20}sign.?in", r"outside.{0,10}us.{0,10}location",
                                        r"multiple.{0,20}location",
-                                       r"anomalous.{0,20}sign.?in.{0,20}location"]),
+                                       r"anomalous.{0,20}sign.?in.{0,20}location",
+                                       r"impossible.{0,20}travel", r"atypical.{0,20}travel",
+                                       r"different.{0,20}location"]),
     ("Sign-in from Anonymous IP",     [r"anonymous.{0,10}ip\b"]),
     ("Sign-in from Anonymous Proxy",  [r"anonymous.{0,10}proxy", r"activity.{0,20}proxy"]),
     ("Sign-in from Botnet IP",        [r"botnet"]),
@@ -95,7 +98,8 @@ CATEGORY_RULES = [
                                        r"suspicious.{0,10}ip", r"successful.{0,20}auth.{0,20}suspicious"]),
     ("Sign-in Disabled Accounts",     [r"disabled.{0,10}account", r"sign.?in.{0,20}disabled"]),
     ("Password Spray Attack",         [r"password.?spray(?!.{0,30}ip)", r"brute.?force",
-                                       r"bruteforce"]),
+                                       r"bruteforce", r"failed.{0,20}logon",
+                                       r"unusual.{0,20}sequence.{0,20}failed"]),
 
     # -----------------------------------------------------------------------
     # Multi-stage / Complex Incidents
@@ -117,7 +121,8 @@ CATEGORY_RULES = [
     ("Mail Forwarding / Inbox Rule",  [r"\bforward(ing|ed)?\b", r"inbox.{0,20}rule",
                                        r"inbox.{0,20}manipulat", r"email.{0,20}forward"]),
     ("Suspicious Email Sending",      [r"suspicious.{0,20}email.{0,20}send",
-                                       r"email.{0,20}send.{0,20}pattern"]),
+                                       r"email.{0,20}send.{0,20}pattern",
+                                       r"user.{0,20}restricted.{0,20}from.{0,20}sending"]),
     ("Email Security",                [r"email.{0,20}(threat|block|quarantin|secur)", r"\bspam\b"]),
 
     # -----------------------------------------------------------------------
@@ -125,12 +130,19 @@ CATEGORY_RULES = [
     # -----------------------------------------------------------------------
     ("Malicious PowerShell",          [r"powershell", r"ps\s*cmdlet"]),
     ("Malware Detected",              [r"\bmalware\b(?!.*c&c)", r"\bransomware\b", r"\btrojan\b",
-                                       r"\bvirus\b", r"defender.{0,20}alert"]),
+                                       r"\bvirus\b", r"defender.{0,20}alert",
+                                       r"unwanted.{0,20}software", r"filezilla", r"qbittorrent"]),
     ("Malicious URL Click",           [r"malicious.{0,20}url", r"url.{0,20}click",
                                        r"url.{0,20}detect", r"url.{0,20}malicious"]),
     ("Suspicious Service / Process",  [r"suspicious.{0,20}service", r"suspicious.{0,20}process",
                                        r"service.{0,20}registr", r"suspicious.{0,20}wordpress",
-                                       r"wordpress.{0,20}theme"]),
+                                       r"wordpress.{0,20}theme", r"impacket",
+                                       r"suspicious.{0,20}behavior",
+                                       r"suspicious.{0,20}addit.{0,20}sensitive.{0,20}group",
+                                       r"domain.{0,10}admin.{0,10}group.{0,10}changed",
+                                       r"rdp\b", r"remote.{0,10}desktop",
+                                       r"flagged.{0,20}suspicious.{0,20}app",
+                                       r"system.{0,10}critical.{0,10}event"]),
     ("Vulnerability / Exploit",       [r"vulnerab", r"\bcve-\d{4}", r"\bexploit\b",
                                        r"zero.?day", r"manageengine", r"fortinet"]),
 
@@ -146,6 +158,9 @@ CATEGORY_RULES = [
     # -----------------------------------------------------------------------
     ("Sensitive Files / DLP",         [r"sensitive.{0,20}(file|information|data)", r"\bdlp\b",
                                        r"custom.{0,20}file"]),
+    ("Data Exfiltration",             [r"\bexfiltrat", r"data.{0,20}(breach|leak|loss|theft)",
+                                       r"high.{0,10}volume.{0,20}email.{0,20}search",
+                                       r"privileged.{0,10}app"]),
 
     # -----------------------------------------------------------------------
     # Microsoft Defender / Graph API alerts
