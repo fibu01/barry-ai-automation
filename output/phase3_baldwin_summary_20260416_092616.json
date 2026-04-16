@@ -1,0 +1,554 @@
+{
+  "run_timestamp": "20260416_092616",
+  "baldwin_mailbox": "jbaldwin@barry.edu",
+  "search_start": "2024-04-01",
+  "search_end": "2026-04-16",
+  "total_responses": 1170,
+  "unique_tickets_responded": 925,
+  "soc_ticket_coverage": {
+    "total_soc_tickets": 1401,
+    "tickets_with_response": 925,
+    "response_rate": "66.0%"
+  },
+  "response_time_hours": {
+    "mean": 18.2,
+    "median": 9.0,
+    "p90": 51.5,
+    "samples": 1086
+  },
+  "by_triage_action": {
+    "Investigated - Benign": 446,
+    "Unclassified Response": 403,
+    "False Positive": 125,
+    "Investigating": 72,
+    "Auto-Remediated": 31,
+    "Account Action Taken": 29,
+    "Info Request / Query": 16,
+    "Verified with User": 15,
+    "Acknowledgment Only": 13,
+    "Known / Expected": 9,
+    "Duplicate / Already Handled": 6,
+    "Monitoring / Watching": 4,
+    "Remediation Applied": 1
+  },
+  "by_month": {
+    "2024-04": 8,
+    "2024-05": 22,
+    "2024-06": 105,
+    "2024-07": 70,
+    "2024-08": 131,
+    "2024-09": 98,
+    "2024-10": 61,
+    "2024-11": 63,
+    "2024-12": 60,
+    "2025-01": 73,
+    "2025-02": 36,
+    "2025-03": 52,
+    "2025-04": 52,
+    "2025-05": 45,
+    "2025-06": 29,
+    "2025-07": 20,
+    "2025-08": 24,
+    "2025-09": 27,
+    "2025-10": 14,
+    "2025-11": 41,
+    "2025-12": 42,
+    "2026-01": 28,
+    "2026-02": 36,
+    "2026-03": 25,
+    "2026-04": 8
+  },
+  "triage_by_soc_category": {
+    "Credential Phishing / AiTM": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 4,
+      "total_responses": 13,
+      "all_actions": {
+        "Unclassified Response": 4,
+        "Investigating": 3,
+        "Auto-Remediated": 2,
+        "False Positive": 1,
+        "Acknowledgment Only": 1,
+        "Investigated - Benign": 1,
+        "Verified with User": 1
+      }
+    },
+    "Microsoft Defender Alert": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 3,
+      "total_responses": 8,
+      "all_actions": {
+        "Investigated - Benign": 3,
+        "Unclassified Response": 2,
+        "Investigating": 1,
+        "Verified with User": 1,
+        "False Positive": 1
+      }
+    },
+    "Suspicious File / Process": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 5,
+      "total_responses": 10,
+      "all_actions": {
+        "Unclassified Response": 5,
+        "False Positive": 2,
+        "Investigated - Benign": 1,
+        "Investigating": 1,
+        "Verified with User": 1
+      }
+    },
+    "User at Risk": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 4,
+      "total_responses": 8,
+      "all_actions": {
+        "Investigated - Benign": 4,
+        "Unclassified Response": 1,
+        "Investigating": 1,
+        "Auto-Remediated": 1,
+        "Known / Expected": 1
+      }
+    },
+    "Malicious URL Click": {
+      "top_triage_action": "False Positive",
+      "top_action_count": 11,
+      "total_responses": 24,
+      "all_actions": {
+        "False Positive": 11,
+        "Unclassified Response": 6,
+        "Investigating": 3,
+        "Investigated - Benign": 1,
+        "Auto-Remediated": 1,
+        "Account Action Taken": 1,
+        "Monitoring / Watching": 1
+      }
+    },
+    "Uncategorized": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 17,
+      "total_responses": 39,
+      "all_actions": {
+        "Unclassified Response": 17,
+        "Investigating": 10,
+        "Investigated - Benign": 5,
+        "False Positive": 5,
+        "Auto-Remediated": 1,
+        "Info Request / Query": 1
+      }
+    },
+    "Malware Detected": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 29,
+      "total_responses": 69,
+      "all_actions": {
+        "Unclassified Response": 29,
+        "Auto-Remediated": 11,
+        "False Positive": 11,
+        "Investigating": 9,
+        "Investigated - Benign": 4,
+        "Acknowledgment Only": 2,
+        "Verified with User": 1,
+        "Known / Expected": 1,
+        "Duplicate / Already Handled": 1
+      }
+    },
+    "Sign-in from Tor / Malware C2": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 10,
+      "total_responses": 23,
+      "all_actions": {
+        "Unclassified Response": 10,
+        "Investigated - Benign": 8,
+        "False Positive": 2,
+        "Known / Expected": 1,
+        "Account Action Taken": 1,
+        "Investigating": 1
+      }
+    },
+    "Maintenance / Informational": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 2,
+      "total_responses": 5,
+      "all_actions": {
+        "Unclassified Response": 2,
+        "Auto-Remediated": 2,
+        "Investigated - Benign": 1
+      }
+    },
+    "Sign-in from Malicious IP": {
+      "top_triage_action": "False Positive",
+      "top_action_count": 7,
+      "total_responses": 23,
+      "all_actions": {
+        "False Positive": 7,
+        "Investigated - Benign": 5,
+        "Unclassified Response": 5,
+        "Investigating": 4,
+        "Account Action Taken": 2
+      }
+    },
+    "Process Injection / Code Exec": {
+      "top_triage_action": "False Positive",
+      "top_action_count": 2,
+      "total_responses": 5,
+      "all_actions": {
+        "False Positive": 2,
+        "Unclassified Response": 1,
+        "Monitoring / Watching": 1,
+        "Investigated - Benign": 1
+      }
+    },
+    "MS Graph API Alert": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 55,
+      "total_responses": 109,
+      "all_actions": {
+        "Investigated - Benign": 55,
+        "Unclassified Response": 40,
+        "Account Action Taken": 6,
+        "Investigating": 5,
+        "Auto-Remediated": 2,
+        "False Positive": 1
+      }
+    },
+    "Pass-the-Ticket / Kerberos": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 16,
+      "total_responses": 34,
+      "all_actions": {
+        "Unclassified Response": 16,
+        "False Positive": 7,
+        "Investigating": 6,
+        "Investigated - Benign": 2,
+        "Duplicate / Already Handled": 1,
+        "Account Action Taken": 1,
+        "Verified with User": 1
+      }
+    },
+    "Unusual Sign-in Location": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 46,
+      "total_responses": 54,
+      "all_actions": {
+        "Unclassified Response": 46,
+        "Investigated - Benign": 4,
+        "Investigating": 3,
+        "Acknowledgment Only": 1
+      }
+    },
+    "Unfamiliar Sign-in Properties": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 29,
+      "total_responses": 62,
+      "all_actions": {
+        "Investigated - Benign": 29,
+        "False Positive": 16,
+        "Unclassified Response": 11,
+        "Investigating": 2,
+        "Duplicate / Already Handled": 2,
+        "Account Action Taken": 1,
+        "Auto-Remediated": 1
+      }
+    },
+    "Password Spray Attack": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 26,
+      "total_responses": 62,
+      "all_actions": {
+        "Unclassified Response": 26,
+        "False Positive": 15,
+        "Investigated - Benign": 12,
+        "Investigating": 3,
+        "Auto-Remediated": 3,
+        "Info Request / Query": 2,
+        "Account Action Taken": 1
+      }
+    },
+    "Anomalous Token": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 200,
+      "total_responses": 215,
+      "all_actions": {
+        "Investigated - Benign": 200,
+        "Unclassified Response": 8,
+        "False Positive": 5,
+        "Auto-Remediated": 1,
+        "Investigating": 1
+      }
+    },
+    "Mail Forwarding / Inbox Rule": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 3,
+      "total_responses": 8,
+      "all_actions": {
+        "Unclassified Response": 3,
+        "False Positive": 2,
+        "Known / Expected": 1,
+        "Verified with User": 1,
+        "Info Request / Query": 1
+      }
+    },
+    "Network Reconnaissance": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 35,
+      "total_responses": 54,
+      "all_actions": {
+        "Unclassified Response": 35,
+        "Acknowledgment Only": 6,
+        "Verified with User": 5,
+        "False Positive": 4,
+        "Info Request / Query": 1,
+        "Investigating": 1,
+        "Investigated - Benign": 1,
+        "Known / Expected": 1
+      }
+    },
+    "Sign-in Disabled Accounts": {
+      "top_triage_action": "Account Action Taken",
+      "top_action_count": 4,
+      "total_responses": 14,
+      "all_actions": {
+        "Account Action Taken": 4,
+        "Unclassified Response": 3,
+        "Info Request / Query": 2,
+        "Known / Expected": 2,
+        "Investigated - Benign": 2,
+        "Investigating": 1
+      }
+    },
+    "Malicious Email Not Removed": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 3,
+      "total_responses": 7,
+      "all_actions": {
+        "Unclassified Response": 3,
+        "Investigated - Benign": 1,
+        "Monitoring / Watching": 1,
+        "False Positive": 1,
+        "Investigating": 1
+      }
+    },
+    "Suspicious Service / Process": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 17,
+      "total_responses": 25,
+      "all_actions": {
+        "Unclassified Response": 17,
+        "False Positive": 3,
+        "Info Request / Query": 2,
+        "Investigating": 1,
+        "Investigated - Benign": 1,
+        "Auto-Remediated": 1
+      }
+    },
+    "Log4j / Known CVE Exploit": {
+      "top_triage_action": "Monitoring / Watching",
+      "top_action_count": 1,
+      "total_responses": 2,
+      "all_actions": {
+        "Monitoring / Watching": 1,
+        "Info Request / Query": 1
+      }
+    },
+    "Initial Access Incident": {
+      "top_triage_action": "False Positive",
+      "top_action_count": 5,
+      "total_responses": 14,
+      "all_actions": {
+        "False Positive": 5,
+        "Investigated - Benign": 2,
+        "Unclassified Response": 2,
+        "Duplicate / Already Handled": 1,
+        "Remediation Applied": 1,
+        "Info Request / Query": 1,
+        "Known / Expected": 1,
+        "Investigating": 1
+      }
+    },
+    "Multi-stage Incident": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 12,
+      "total_responses": 41,
+      "all_actions": {
+        "Unclassified Response": 12,
+        "False Positive": 11,
+        "Investigated - Benign": 7,
+        "Account Action Taken": 4,
+        "Investigating": 2,
+        "Auto-Remediated": 2,
+        "Info Request / Query": 1,
+        "Verified with User": 1,
+        "Duplicate / Already Handled": 1
+      }
+    },
+    "Unauthorized Access": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 7,
+      "total_responses": 11,
+      "all_actions": {
+        "Unclassified Response": 7,
+        "Verified with User": 1,
+        "Investigating": 1,
+        "Account Action Taken": 1,
+        "False Positive": 1
+      }
+    },
+    "Sensitive Files / DLP": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 3,
+      "total_responses": 3,
+      "all_actions": {
+        "Unclassified Response": 3
+      }
+    },
+    "Sign-in from Anonymous IP": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 43,
+      "total_responses": 60,
+      "all_actions": {
+        "Investigated - Benign": 43,
+        "False Positive": 8,
+        "Unclassified Response": 6,
+        "Verified with User": 1,
+        "Auto-Remediated": 1,
+        "Investigating": 1
+      }
+    },
+    "Sign-in from Password-Spray IP": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 4,
+      "total_responses": 4,
+      "all_actions": {
+        "Investigated - Benign": 4
+      }
+    },
+    "OSSEC / Agent Disconnected": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 4,
+      "total_responses": 4,
+      "all_actions": {
+        "Unclassified Response": 4
+      }
+    },
+    "Stolen Session Cookie": {
+      "top_triage_action": "Account Action Taken",
+      "top_action_count": 1,
+      "total_responses": 2,
+      "all_actions": {
+        "Account Action Taken": 1,
+        "Unclassified Response": 1
+      }
+    },
+    "Sign-in from Botnet IP": {
+      "top_triage_action": "Account Action Taken",
+      "top_action_count": 1,
+      "total_responses": 2,
+      "all_actions": {
+        "Account Action Taken": 1,
+        "Investigated - Benign": 1
+      }
+    },
+    "Sign-in from Anonymous Proxy": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 43,
+      "total_responses": 49,
+      "all_actions": {
+        "Investigated - Benign": 43,
+        "Unclassified Response": 4,
+        "Auto-Remediated": 1,
+        "Account Action Taken": 1
+      }
+    },
+    "Suspicious Activity / Auth": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 3,
+      "total_responses": 6,
+      "all_actions": {
+        "Investigated - Benign": 3,
+        "Unclassified Response": 2,
+        "False Positive": 1
+      }
+    },
+    "Defense Evasion": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 2,
+      "total_responses": 4,
+      "all_actions": {
+        "Unclassified Response": 2,
+        "False Positive": 1,
+        "Auto-Remediated": 1
+      }
+    },
+    "Vulnerability / Exploit": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 4,
+      "total_responses": 5,
+      "all_actions": {
+        "Unclassified Response": 4,
+        "Investigating": 1
+      }
+    },
+    "Suspicious Email Sending": {
+      "top_triage_action": "Account Action Taken",
+      "top_action_count": 3,
+      "total_responses": 3,
+      "all_actions": {
+        "Account Action Taken": 3
+      }
+    },
+    "BEC / Credential Harvesting": {
+      "top_triage_action": "Account Action Taken",
+      "top_action_count": 1,
+      "total_responses": 1,
+      "all_actions": {
+        "Account Action Taken": 1
+      }
+    },
+    "Compromised Account Activity": {
+      "top_triage_action": "False Positive",
+      "top_action_count": 2,
+      "total_responses": 5,
+      "all_actions": {
+        "False Positive": 2,
+        "Unclassified Response": 1,
+        "Known / Expected": 1,
+        "Investigating": 1
+      }
+    },
+    "Mail Bombing": {
+      "top_triage_action": "Investigated - Benign",
+      "top_action_count": 2,
+      "total_responses": 3,
+      "all_actions": {
+        "Investigated - Benign": 2,
+        "Investigating": 1
+      }
+    },
+    "Suspicious DNS / C2 Comms": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 1,
+      "total_responses": 2,
+      "all_actions": {
+        "Unclassified Response": 1,
+        "Investigating": 1
+      }
+    },
+    "AI / Copilot Misuse": {
+      "top_triage_action": "Unclassified Response",
+      "top_action_count": 1,
+      "total_responses": 1,
+      "all_actions": {
+        "Unclassified Response": 1
+      }
+    },
+    "Data Exfiltration": {
+      "top_triage_action": "Verified with User",
+      "top_action_count": 1,
+      "total_responses": 1,
+      "all_actions": {
+        "Verified with User": 1
+      }
+    }
+  },
+  "output_csv": "./output/phase3_baldwin_responses_20260416_092616.csv"
+}
