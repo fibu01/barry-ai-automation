@@ -11,7 +11,7 @@
 ---
 
 ## TIP #4
-STATUS: Ready
+STATUS: Done
 
 TITLE: Teach AI to Sound Like You
 SUBTITLE: Stop editing every AI draft. Teach it your voice once.
@@ -29,7 +29,7 @@ GET STARTED: "Here are a few examples of how I write. Use these as your style gu
 ---
 
 ## TIP #5
-STATUS: Ready
+STATUS: Done
 
 TITLE: Use AI to Communicate Across Languages
 SUBTITLE: Reach every student and family, in their language.
