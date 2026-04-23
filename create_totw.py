@@ -121,22 +121,29 @@ def upload_file(token, drive_id, local_path, remote_filename):
 # CLAUDE.md parsing
 # ---------------------------------------------------------------------------
 
-def parse_claude_md(path="CLAUDE.md"):
+def parse_claude_md(path="CLAUDE.md", force_tip=None):
     with open(path, encoding="utf-8") as f:
         content = f.read()
 
-    # Find all tips and their statuses
     tip_blocks = re.split(r"(?=^## TIP #\d+)", content, flags=re.MULTILINE)
-    ready_tips = []
-    for block in tip_blocks:
-        m = re.match(r"## TIP #(\d+)\s*\nSTATUS:\s*(\w+)", block)
-        if m and m.group(2).strip() == "Ready":
-            ready_tips.append((int(m.group(1)), block))
 
-    if not ready_tips:
-        raise Exception("No tips with STATUS: Ready found in CLAUDE.md")
-
-    tip_num, block = min(ready_tips, key=lambda x: x[0])
+    if force_tip is not None:
+        # Find the specific tip regardless of status (used for reruns after rejection)
+        matched = [(int(m.group(1)), block)
+                   for block in tip_blocks
+                   if (m := re.match(r"## TIP #(\d+)", block)) and int(m.group(1)) == force_tip]
+        if not matched:
+            raise Exception(f"TIP #{force_tip} not found in CLAUDE.md")
+        tip_num, block = matched[0]
+    else:
+        ready_tips = []
+        for block in tip_blocks:
+            m = re.match(r"## TIP #(\d+)\s*\nSTATUS:\s*(\w+)", block)
+            if m and m.group(2).strip() == "Ready":
+                ready_tips.append((int(m.group(1)), block))
+        if not ready_tips:
+            raise Exception("No tips with STATUS: Ready found in CLAUDE.md")
+        tip_num, block = min(ready_tips, key=lambda x: x[0])
 
     def field(name):
         m = re.search(rf"^{re.escape(name)}:\s*(.+?)(?=\n[A-Z]|\Z)", block, re.MULTILINE | re.DOTALL)
@@ -275,12 +282,21 @@ def build_document(tip, banner_path, out_path):
 # ---------------------------------------------------------------------------
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tip", type=int, default=None,
+                        help="Force a specific tip number (e.g. after rejection)")
+    args = parser.parse_args()
+
     token = authenticate()
     drive_id = os.environ["SHAREPOINT_DRIVE_ID"]
 
-    tip = parse_claude_md()
+    tip = parse_claude_md(force_tip=args.tip)
     tip_num = tip["num"]
-    print(f"Current tip: #{tip_num} - {tip['title']}")
+    if args.tip:
+        print(f"Rerunning tip: #{tip_num} - {tip['title']} (forced)")
+    else:
+        print(f"Current tip: #{tip_num} - {tip['title']}")
 
     banner_path = download_banner(token, drive_id, tip_num)
 
@@ -293,7 +309,8 @@ def main():
     web_url = upload_file(token, drive_id, local_doc, doc_filename)
     print(f"UPLOAD COMPLETE: {web_url}")
 
-    mark_done(tip_num)
+    if not args.tip:
+        mark_done(tip_num)
 
     print()
     print("WORKFLOW COMPLETE")
