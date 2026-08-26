@@ -11,7 +11,7 @@
 ---
 
 ## TIP #4
-STATUS: Ready
+STATUS: Done
 
 TITLE: Teach AI to Sound Like You
 SUBTITLE: Stop editing every AI draft. Teach it your voice once.
